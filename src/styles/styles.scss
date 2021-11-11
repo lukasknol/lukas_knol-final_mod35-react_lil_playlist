@@ -1,0 +1,135 @@
+$font: 'Verdana';
+
+button:hover {
+  cursor: pointer;
+}
+
+.container {
+  height: 100%;
+  margin: 0 auto;
+  font-family: $font;
+  background-color: #0196bb;
+  color: #fff;
+  padding: 0px 20px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  font-size: x-large;
+}
+
+main {
+  margin-top: 20px;
+}
+
+.add-song {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+
+  input {
+    font-family: $font;
+    margin-right: 5px;
+  }
+
+  select {
+    font-family: $font;
+    margin-right: 5px;
+  }
+
+  button {
+    font-family: $font;
+    color: #fff;
+    background-color: #333;
+  }
+}
+
+.buttonsbar {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0px 40px 0px;
+
+  label {
+    margin-right: 5px;
+  }
+
+  select {
+    font-family: $font;
+    margin-left: 5px;
+  }
+
+  .filters {
+    margin-left: 20px;
+    margin-right: 20px;
+
+    input {
+      margin-left: 10px;
+      cursor: pointer;
+    }
+  }
+
+  button {
+    font-family: $font;
+    color: #000;
+  }
+}
+
+.playlist-container {
+  border-top: 1px #fff dashed;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+table {
+  width: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+  table-layout: fixed;
+  border-collapse: collapse;
+  margin-bottom: 50px;
+}
+
+th {
+  text-align: start;
+  padding-bottom: 15px;
+}
+
+tr {
+  text-align: start;
+  &:nth-child(even) {
+    background-color: #39b7d6;
+  }
+}
+
+td {
+  border: none;
+  border-top: 1px #fff dashed;
+  padding: 5px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.about-container {
+  border-top: 1px #fff dashed;
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+
+  .center {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: $font;
+    color: #000;
+  }
+}

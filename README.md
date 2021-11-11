@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# Lil' Playlist - Single Page Application (SPA)
+
+SPA created with React App. For Winc Academy, Front-end Development.
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

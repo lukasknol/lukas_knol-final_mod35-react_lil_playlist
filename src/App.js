@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import { useSelector } from 'react-redux';
+import './styles/styles.css';
+import Header from './components/Header';
+import AddSong from './containers/AddSong';
+import Playlist from './containers/Playlist';
+import AboutMe from './containers/AboutMe';
 
 function App() {
+  const route = useSelector((state) => state.route);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <Header />
+
+      <main>
+        {route === 'playlist' ? (
+          <div>
+            <AddSong />
+            <Playlist />
+          </div>
+        ) : (
+          <AboutMe />
+        )}
+      </main>
     </div>
   );
 }
